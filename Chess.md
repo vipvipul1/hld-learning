@@ -9,29 +9,7 @@
 </head>
 
 <body class="stackedit">
-  <div class="stackedit__left">
-    <div class="stackedit__toc">
-      
-<ul>
-<li>
-<ul>
-<li><a href="#mvp-requirements">MVP Requirements</a></li>
-<li><a href="#design-goals">Design Goals</a></li>
-<li><a href="#scale-estimation">Scale Estimation</a></li>
-<li><a href="#system-design">System Design</a>
-<ul>
-<li></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-
-    </div>
-  </div>
-  <div class="stackedit__right">
-    <div class="stackedit__html">
-      <h2 id="mvp-requirements">MVP Requirements</h2>
+  <div class="stackedit__html"><h2 id="mvp-requirements">MVP Requirements</h2>
 <h3 id="v0">V0</h3>
 <ol>
 <li>User can login.</li>
@@ -126,9 +104,7 @@ For storing Game data, we will shard Games db based on gameId.</p>
 <li>If it was saved in the 1st try but response wasn’t received due to network partition then there won’t be any new entry for the retry and SUCCESS will be returned to both sender and receiver. Otherwise, entry will be made in Games shard. In this way we can maintain the Idempotent nature of the moves.</li>
 <li>We can use Master-Slave architecture for both Users and Games shard for backup with Eventual Consistency.</li>
 </ul>
-
-    </div>
-  </div>
+</div>
 </body>
 
 </html>
