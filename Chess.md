@@ -1,9 +1,37 @@
----
+<!DOCTYPE html>
+<html>
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chess</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
 
----
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li>
+<ul>
+<li><a href="#mvp-requirements">MVP Requirements</a></li>
+<li><a href="#design-goals">Design Goals</a></li>
+<li><a href="#scale-estimation">Scale Estimation</a></li>
+<li><a href="#system-design">System Design</a>
+<ul>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-<h2 id="mvp-requirements">MVP Requirements</h2>
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h2 id="mvp-requirements">MVP Requirements</h2>
 <h3 id="v0">V0</h3>
 <ol>
 <li>User can login.</li>
@@ -19,9 +47,8 @@
 <h3 id="v1">V1</h3>
 <ol>
 <li>A User can invite another User by searching with email/username.</li>
-<li>Users may be able to see all valid positions they can move a piece to.</li>
 <li>Users may undo their move.</li>
-<li>Users can history of games played.</li>
+<li>Users can see history of games played.</li>
 </ol>
 <h2 id="design-goals">Design Goals</h2>
 <blockquote>
@@ -99,3 +126,8 @@ For storing Game data, we will shard Games db based on gameId.</p>
 <li>We can use Master-Slave architecture for both Users and Games shard for backup with Eventual Consistency.</li>
 </ul>
 
+    </div>
+  </div>
+</body>
+
+</html>
